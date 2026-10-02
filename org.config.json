@@ -21,7 +21,7 @@
       "name": "taco_devs",
       "visibility": "organization",
       "members": [
-        "oystenpeter@gmail.com",
+        "o4supplies@gmail.com",
         "jim@example.com"
       ]
     },
@@ -35,7 +35,7 @@
         "manage_vcs_settings": true
       },
       "members": [
-        "sally@example.com",
+        "oystenpeter@gmail.com",
         "greg@example.com"
       ]
     }

@@ -1,3 +1,7 @@
+provider "tfe" {
+  token = var.TFE_TOKEN
+}
+
 module "org-factory" {
   source  = "ned1313/org-factory/tfe"
   version = ">= 0.2.1"

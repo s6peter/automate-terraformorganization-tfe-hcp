@@ -1,0 +1,43 @@
+{
+  "workspaces": [
+    {
+      "name": "taco-app-useast1-dev",
+      "description": "workspace description",
+      "teams": [
+        {
+          "name": "taco_devs",
+          "access_level": "plan"
+        }
+      ],
+      "terraform_version": "1.1.0",
+      "tag_names": [
+        "app:taco",
+        "env:development"
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "name": "taco_devs",
+      "visibility": "organization",
+      "members": [
+        "bob@example.com",
+        "jim@example.com"
+      ]
+    },
+    {
+      "name": "org_admins",
+      "visibility": "secret",
+      "organization_access": {
+        "manage_policies": true,
+        "manage_policy_overrides": true,
+        "manage_workspaces": true,
+        "manage_vcs_settings": true
+      },
+      "members": [
+        "sally@example.com",
+        "greg@example.com"
+      ]
+    }
+  ]
+}

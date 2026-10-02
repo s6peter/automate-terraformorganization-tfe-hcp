@@ -1,0 +1,22 @@
+# Terraform working directory and state.
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Local input values and saved plans may contain secrets.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+*.tfplan
+
+# Local CLI credentials, overrides, and crash logs.
+.terraformrc
+terraform.rc
+*.tfrc
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+crash.log
+crash.*.log

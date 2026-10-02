@@ -1,0 +1,44 @@
+{
+  "workspaces": [
+    {
+      "name": "bank-app-useast1-dev",
+      "description": "workspace description",
+      "teams": [
+        {
+          "name": "bank_devs",
+          "access_level": "plan"
+        }
+      ],
+      "terraform_version": "1.1.0",
+      "tag_names": [
+        "app:taco",
+        "env:development"
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "name": "bank_devs",
+      "visibility": "organization",
+      "members": [
+        "o4supplies@gmail.com",
+        "jim@example.com"
+      ]
+    },
+    {
+      "name": "org_admins",
+      "visibility": "secret",
+      "organization_access": {
+        "manage_policies": true,
+        "manage_policy_overrides": true,
+        "manage_workspaces": true,
+        "manage_vcs_settings": true
+      },
+      "members": [
+        "oystenpeter@gmail.com",
+        "greg1@example.com",
+        "nana@example.com"
+      ]
+    }
+  ]
+}
